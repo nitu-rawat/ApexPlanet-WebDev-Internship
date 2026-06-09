@@ -1,0 +1,107 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #dfe4ea;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Desktop View Layout (Side-by-side) */
+.container {
+    display: flex;
+    flex-direction: row; /* Desktop par cards barabar mein dikhenge */
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Common Card Styling */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1; /* Dono cards barabar size ke honge */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2f3542;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.description {
+    color: #747d8c;
+    margin-bottom: 20px;
+}
+
+/* Box to display dynamic API results */
+.joke-box {
+    background-color: #f1f2f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 100px;
+    border-left: 5px solid #1e90ff;
+}
+
+#jokeSetup {
+    font-weight: bold;
+    color: #2f3542;
+    margin-bottom: 10px;
+}
+
+#jokePunchline {
+    color: #2ed573;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #1e90ff; /* Blue Button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3742fa;
+}
+
+.highlight-text {
+    margin-top: 15px;
+    color: #ff4757;
+    font-weight: bold;
+}
+
+/* ======================================================== */
+/* ADVANCED: Media Query for Mobile Responsiveness (Screen <= 768px) */
+/* ======================================================== */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+    
+    .container {
+        flex-direction: column; /* Mobile par cards upar-neeche ho jayenge */
+        gap: 20px;
+    }
+    
+    h2 {
+        font-size: 18px; /* Mobile par headings thodi choti ho jayengi */
+    }
+}

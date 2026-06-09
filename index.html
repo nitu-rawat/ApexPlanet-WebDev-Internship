@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Responsive Layout & API Fetching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card api-card">
+            <h2>Live API Data (Random Joke Generator)</h2>
+            <p class="description">Click the button below to fetch a live joke from a public API.</p>
+            
+            <div id="jokeContainer" class="joke-box">
+                <p id="jokeSetup">Click the button to load a joke...</p>
+                <p id="jokePunchline"></p>
+            </div>
+            
+            <button id="fetchBtn" class="btn">Fetch New Joke</button>
+        </div>
+
+        <div class="card info-card">
+            <h2>Responsive Design Info</h2>
+            <p>This layout uses CSS flexbox and media queries. On a desktop/laptop, these two cards appear side-by-side (row layout).</p>
+            <p class="highlight-text">Try resizing your browser window or opening this on a mobile phone. The cards will automatically stack on top of each other (column layout) to fit smaller screens perfectly!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

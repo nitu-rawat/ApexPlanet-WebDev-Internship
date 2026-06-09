@@ -1,0 +1,129 @@
+/* Resetting basic margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    padding: 40px 20px;
+}
+
+/* CSS Grid layout for two columns on desktop */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Styling the white cards */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2f3640;
+}
+
+/* Flexbox for Form layout */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #718093;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Common Button Styling */
+.btn {
+    background-color: #4cd137; /* Green button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #44bd32;
+}
+
+/* To-Do Input Flexbox arrangement */
+.todo-input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todoInput {
+    flex: 1;
+}
+
+#addTodoBtn {
+    width: auto;
+}
+
+/* Styling dynamic list items */
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #4cd137;
+}
+
+/* Delete button inside To-Do List */
+.delete-btn {
+    background-color: #e84118; /* Red button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c23616;
+}
+
+/* Form Message style colors */
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive design using Media Query (Mobile View) */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr; /* Switch to 1 column layout on mobile */
+    }
+}

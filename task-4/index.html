@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - Local Storage, Filtering & Sorting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="storage-container">
+        <h2>Persistent Notebook (Local Storage Demo)</h2>
+        <p class="desc">Type a note below. Even if you refresh the browser, your note will stay saved!</p>
+        <textarea id="noteInput" placeholder="Type your important note here..."></textarea>
+        <button id="saveBtn" class="btn btn-save">Save to Local Storage</button>
+        <p id="storageStatus" class="status-text"></p>
+    </div>
+
+    <div class="shop-container">
+        <h2>Mini Product Catalog</h2>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label>Filter by Category:</label>
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Sort by Price:</label>
+                <select id="priceSort">
+                    <option value="default">Default</option>
+                    <option value="lowToHigh">Price: Low to High</option>
+                    <option value="highToLow">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="productGrid" class="product-grid">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
